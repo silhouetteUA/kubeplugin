@@ -39,7 +39,7 @@ Before script execution, please don't forget to add `execute` permission to it u
 
 Now let us try to execute the script:
 
-`devops_course/week5/plugin/scripts>main> ./kubeplugin pod kube-system`
+`~/study/devops_course/week5/plugin/scripts>main> ./kubeplugin pod kube-system`
 
 ````
 Resource, Namespace, Name, CPU, Memory
@@ -64,7 +64,7 @@ Now we need place it anywhere in  `PATH`, like `/usr/local/bin/kubectl-kubeplugi
 Now let us check our plugin in the list:
 
 ````
-devops_course/week5/plugin/scripts>main>  kubectl plugin list
+~/study/devops_course/week5/plugin/scripts>main>  kubectl plugin list
 /usr/local/bin/kubectl-foo
 /usr/local/bin/kubectl-kubeplugin
 ````
@@ -75,7 +75,7 @@ Now let us execute the script properly, using kubectl:
  ~/study/devops_course/week5/plugin/scripts>main>  kubectl kubeplugin node kube-system
 Resource, Namespace, Name, CPU, Memory
 node, kube-system, minikube, 395m, 4%
-                                                                                                                                  
+                                                                                                                                  
  ~/study/devops_course/week5/plugin/scripts>main>  kubectl kubeplugin pod kube-system
 Resource, Namespace, Name, CPU, Memory
 pod, kube-system, coredns-5d78c9869d-nh7vq, 4m, 38Mi
