@@ -28,7 +28,7 @@ This script requires you to provide two ARG's during its execution:
 `Resource` and `Namespace` value.
 For `Resource` only two values can be passed, namely:
 
-node  -- Display resource (CPU/memory) usage of nodes
+node  -- Display resource (CPU/memory) usage of nodes \n
 pod   -- Display resource (CPU/memory) usage of pods
 
 For `Namespace` any value can be provided, like - default, kube-system, etc.
