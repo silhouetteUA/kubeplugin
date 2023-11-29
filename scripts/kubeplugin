@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Define command-line arguments
+
+# Retrieve resource usage statistics from Kubernetes
+echo "Resource, Namespace, Name, CPU, Memory"
+kubectl top $1 -n $2 | tail -n +2 | while read line
+do
+  # Extract CPU and memory usage from the output
+  NAME=$(echo $line | awk '{print $1}')
+  CPU=$(echo $line | awk '{print $2}')
+  MEMORY=$(echo $line | awk '{print $3}')
+
+  # Output the statistics to the console
+  echo "$1, $2, $NAME, $CPU, $MEMORY"
+done
