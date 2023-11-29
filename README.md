@@ -72,11 +72,11 @@ devops_course/week5/plugin/scripts>main>  kubectl plugin list
 Now let us execute the script properly, using kubectl:
 
 ```
- ~/study/devops_course/week5/plugin/scripts>main>  kubectl kubeplugin node kube-system
+ ~/study/devops_course/week5/plugin/scripts>main>  kubectl kubeplugin node kube-system
 Resource, Namespace, Name, CPU, Memory
 node, kube-system, minikube, 395m, 4%
                                                                                                                                   
- ~/study/devops_course/week5/plugin/scripts>main>  kubectl kubeplugin pod kube-system
+ ~/study/devops_course/week5/plugin/scripts>main>  kubectl kubeplugin pod kube-system
 Resource, Namespace, Name, CPU, Memory
 pod, kube-system, coredns-5d78c9869d-nh7vq, 4m, 38Mi
 pod, kube-system, etcd-minikube, 34m, 146Mi
