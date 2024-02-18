@@ -1,5 +1,5 @@
 # kubeplugin
-Instruction: how to create your own kubectl plugin, week5 practice1
+Instruction: how to create your own kubectl plugin
 
 ## How to create your own kubectl plugin?
 
